@@ -1,0 +1,32 @@
+
+.mensajeSecreto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cardPersona {
+    padding: 1em;
+
+    border-radius: 1em;
+
+    background-color: grey;
+
+    height: 8em;
+    width: 6em;
+
+    transition: 0.4s;
+
+}
+
+.cardPersona:hover {
+    background-color: darkgray;
+
+    transition: 0.4s;
+}
+
+.datosPersona {
+    font-weight: bold;
+}
