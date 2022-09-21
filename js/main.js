@@ -67,6 +67,16 @@ cajonContenido.addEventListener("click", () => {
         ).join('');
 });
 
+cajonContenido.addEventListener("mouseover", ()=> {
+    console.log(" ira ira ira ira ");
+    cajonContenido.classList.add("claseSecreta")
+})
+
+cajonContenido.addEventListener("mouseout", ()=> {
+    
+    cajonContenido.classList.remove("claseSecreta");
+})
+
 const Saludar = (quien) => {
     console.log(`Hola ${quien}`);
     // console.log("funciona");

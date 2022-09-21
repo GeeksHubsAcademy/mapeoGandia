@@ -30,3 +30,9 @@
 .datosPersona {
     font-weight: bold;
 }
+
+.claseSecreta {
+    color: red;
+    font-size: 3em;
+    font-style: italic;
+}
