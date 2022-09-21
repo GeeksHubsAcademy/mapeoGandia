@@ -4,37 +4,43 @@ let alumnos = [
         nombre: "David",
         edad: 43,
         superpoder: "Relajarme",
-        vehiculo: "Moto"
+        vehiculo: "Moto",
+        key: 1
     },
     {
         nombre: "Paula",
         edad: 31,
         superpoder: "Invisibilidad",
-        vehiculo: "Coche"
+        vehiculo: "Coche",
+        key: 2
     },
     {
         nombre: "Cristian",
         edad: 26,
         superpoder: "Volar",
-        vehiculo: "Cuadriceps"
+        vehiculo: "Cuadriceps",
+        key: 3
     },
     {
         nombre: "Rocio",
         edad: 34,
         superpoder: "Meditación",
-        vehiculo: "Coche"
+        vehiculo: "Coche",
+        key: 4
     },
     {
         nombre: "Mirka",
         edad: 25,
         superpoder: "Paciencia",
-        vehiculo: "Coche"
+        vehiculo: "Coche",
+        key: 5
     },
     {
         nombre: "Yuri",
         edad: 30,
         superpoder: "Tranquilidad",
-        vehiculo: "Coche"
+        vehiculo: "Coche",
+        key: 6
     }
 ];
 
@@ -51,12 +57,17 @@ cajonContenido.addEventListener("click", () => {
             persona => {
 
                 return `
-                        <div class="cardPersona">
-                            <div class="datosPersona">${persona.edad}</div>
-                            <div class="datosPersona">${persona.nombre}</div>
-                            <div class="datosPersona">${persona.superpoder}</div>
+                        <div key='${persona.key}' onclick='Saludar("${persona.nombre}")' class="cardPersona">
+                            <div  class="datosPersona">${persona.edad}</div>
+                            <div  class="datosPersona">${persona.nombre}</div>
+                            <div  class="datosPersona">${persona.superpoder}</div>
                         </div>
                     `
             }
         ).join('');
 });
+
+const Saludar = (quien) => {
+    console.log(`Hola ${quien}`);
+    // console.log("funciona");
+};
